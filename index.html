@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redimensionar Imágenes</title>
+  <script>
+    function redimensionar() {
+      var referencia = document.getElementById('referencia');
+      var imagen = document.getElementById('imagen');
+
+      // Obtener las dimensiones de la imagen de referencia
+      var referenciaWidth = referencia.width;
+      var referenciaHeight = referencia.height;
+
+      // Redimensionar la imagen
+      imagen.width = referenciaWidth;
+      imagen.height = referenciaHeight;
+    }
+  </script>
+</head>
+<body>
+  <h1>Redimensionar Imágenes</h1>
+
+  <h2>Imagen de Referencia</h2>
+  <img id="referencia" src="ruta_de_tu_imagen_de_referencia.jpg" width="300" height="200">
+
+  <h2>Imagen a Redimensionar</h2>
+  <img id="imagen" src="ruta_de_tu_imagen_a_redimensionar.jpg" width="300" height="200">
+
+  <button onclick="redimensionar()">Redimensionar</button>
+</body>
+</html>
